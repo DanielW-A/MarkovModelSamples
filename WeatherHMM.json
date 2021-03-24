@@ -1,0 +1,779 @@
+{
+	"type": "HiddenMarkovModel",
+	"states": {
+		"0": {
+			"x": 323,
+			"y": 297,
+			"id": 0,
+			"text": "Sunny",
+			"emissionProabilities": {},
+			"colour": "#0000FF"
+		},
+		"1": {
+			"x": 782,
+			"y": 88,
+			"id": 1,
+			"text": "Cloudy",
+			"emissionProabilities": {},
+			"colour": "#FF0000"
+		},
+		"2": {
+			"x": 1252,
+			"y": 292,
+			"id": 2,
+			"text": "Rainy",
+			"emissionProabilities": {},
+			"colour": "#FFA500"
+		}
+	},
+	"transitions": {
+		"0": {
+			"0": {
+				"x": 323,
+				"y": 297,
+				"startNode": {
+					"x": 323,
+					"y": 297,
+					"id": 0,
+					"text": "Sunny",
+					"emissionProabilities": {},
+					"colour": "#0000FF"
+				},
+				"endNode": {
+					"x": 323,
+					"y": 297,
+					"id": 0,
+					"text": "Sunny",
+					"emissionProabilities": {},
+					"colour": "#0000FF"
+				},
+				"type": "self",
+				"endPos": {
+					"x": 308.86194210751154,
+					"y": 270.67309540756116
+				},
+				"startPos": {
+					"x": 0,
+					"y": 0
+				},
+				"anchorAngle": -2.5220768431906646,
+				"text": "0.5",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": false
+			},
+			"1": {
+				"x": 552.5,
+				"y": 192.5,
+				"startNode": {
+					"x": 323,
+					"y": 297,
+					"id": 0,
+					"text": "Sunny",
+					"emissionProabilities": {},
+					"colour": "#0000FF"
+				},
+				"endNode": {
+					"x": 782,
+					"y": 88,
+					"id": 1,
+					"text": "Cloudy",
+					"emissionProabilities": {},
+					"colour": "#FF0000"
+				},
+				"type": "arc",
+				"endPos": {
+					"x": 756.8441680466967,
+					"y": 104.34496081455518
+				},
+				"startPos": {
+					"x": 351.8447205478957,
+					"y": 288.7564739458178
+				},
+				"anchorAngle": -0.022955150835751545,
+				"text": "0.25",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": false
+			},
+			"2": {
+				"x": 787.5,
+				"y": 294.5,
+				"startNode": {
+					"x": 323,
+					"y": 297,
+					"id": 0,
+					"text": "Sunny",
+					"emissionProabilities": {},
+					"colour": "#0000FF"
+				},
+				"endNode": {
+					"x": 1252,
+					"y": 292,
+					"id": 2,
+					"text": "Rainy",
+					"emissionProabilities": {},
+					"colour": "#FFA500"
+				},
+				"type": "arc",
+				"endPos": {
+					"x": 1222.1178863994767,
+					"y": 294.65649685065
+				},
+				"startPos": {
+					"x": 352.9089768416451,
+					"y": 299.3346933498842
+				},
+				"anchorAngle": 0.001297016133916541,
+				"text": "0.25",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": false
+			},
+			"e0": {
+				"x": 245,
+				"y": 436.5,
+				"startNode": {
+					"x": 323,
+					"y": 297,
+					"id": 0,
+					"text": "Sunny",
+					"emissionProabilities": {},
+					"colour": "#0000FF"
+				},
+				"endNode": {
+					"x": 167,
+					"y": 576,
+					"id": "e0",
+					"text": "Dry",
+					"emission": "D"
+				},
+				"type": "direct",
+				"endPos": {
+					"x": 183.7741935483871,
+					"y": 546
+				},
+				"startPos": {
+					"x": 308.3590492602941,
+					"y": 323.184777284474
+				},
+				"anchorAngle": 2.2977369968233803,
+				"text": "0.6",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": true
+			},
+			"e1": {
+				"x": 427.5,
+				"y": 434,
+				"startNode": {
+					"x": 323,
+					"y": 297,
+					"id": 0,
+					"text": "Sunny",
+					"emissionProabilities": {},
+					"colour": "#0000FF"
+				},
+				"endNode": {
+					"x": 532,
+					"y": 571,
+					"id": "e1",
+					"text": "Dryish",
+					"emission": "I"
+				},
+				"type": "direct",
+				"endPos": {
+					"x": 509.11678832116786,
+					"y": 541
+				},
+				"startPos": {
+					"x": 341.19440810442273,
+					"y": 320.8529560794824
+				},
+				"anchorAngle": 0.8390550500990028,
+				"text": "0.2",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": true
+			},
+			"e2": {
+				"x": 666.5,
+				"y": 433.5,
+				"startNode": {
+					"x": 323,
+					"y": 297,
+					"id": 0,
+					"text": "Sunny",
+					"emissionProabilities": {},
+					"colour": "#0000FF"
+				},
+				"endNode": {
+					"x": 1010,
+					"y": 570,
+					"id": "e2",
+					"text": "Moist",
+					"emission": "M"
+				},
+				"type": "direct",
+				"endPos": {
+					"x": 980,
+					"y": 558.0786026200873
+				},
+				"startPos": {
+					"x": 350.8794179977574,
+					"y": 308.07872068906516
+				},
+				"anchorAngle": 0.323762624116008,
+				"text": "0.15",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": true
+			},
+			"e3": {
+				"x": 873.5,
+				"y": 435.5,
+				"startNode": {
+					"x": 323,
+					"y": 297,
+					"id": 0,
+					"text": "Sunny",
+					"emissionProabilities": {},
+					"colour": "#0000FF"
+				},
+				"endNode": {
+					"x": 1424,
+					"y": 574,
+					"id": "e3",
+					"text": "Soggy",
+					"emission": "S"
+				},
+				"type": "direct",
+				"endPos": {
+					"x": 1394,
+					"y": 566.4523160762943
+				},
+				"startPos": {
+					"x": 352.09336179059625,
+					"y": 304.31958330244794
+				},
+				"anchorAngle": 0.1944199685526667,
+				"text": "0.05",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": true
+			}
+		},
+		"1": {
+			"0": {
+				"x": 552.5,
+				"y": 192.5,
+				"startNode": {
+					"x": 782,
+					"y": 88,
+					"id": 1,
+					"text": "Cloudy",
+					"emissionProabilities": {},
+					"colour": "#FF0000"
+				},
+				"endNode": {
+					"x": 323,
+					"y": 297,
+					"id": 0,
+					"text": "Sunny",
+					"emissionProabilities": {},
+					"colour": "#0000FF"
+				},
+				"type": "arc",
+				"endPos": {
+					"x": 348.1558319533033,
+					"y": 280.6550391854453
+				},
+				"startPos": {
+					"x": 753.1552794521047,
+					"y": 96.24352605418358
+				},
+				"anchorAngle": 2.8584081764945215,
+				"text": "0.3",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": false
+			},
+			"1": {
+				"x": 782,
+				"y": 88,
+				"startNode": {
+					"x": 782,
+					"y": 88,
+					"id": 1,
+					"text": "Cloudy",
+					"emissionProabilities": {},
+					"colour": "#FF0000"
+				},
+				"endNode": {
+					"x": 782,
+					"y": 88,
+					"id": 1,
+					"text": "Cloudy",
+					"emissionProabilities": {},
+					"colour": "#FF0000"
+				},
+				"type": "self",
+				"endPos": {
+					"x": 809.2370801945322,
+					"y": 75.70642245449453
+				},
+				"startPos": {
+					"x": 0,
+					"y": 0
+				},
+				"anchorAngle": -0.8824375493794477,
+				"text": "0.4",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": false
+			},
+			"2": {
+				"x": 1017,
+				"y": 190,
+				"startNode": {
+					"x": 782,
+					"y": 88,
+					"id": 1,
+					"text": "Cloudy",
+					"emissionProabilities": {},
+					"colour": "#FF0000"
+				},
+				"endNode": {
+					"x": 1252,
+					"y": 292,
+					"id": 2,
+					"text": "Rainy",
+					"emissionProabilities": {},
+					"colour": "#FFA500"
+				},
+				"type": "arc",
+				"endPos": {
+					"x": 1223.0301622193947,
+					"y": 284.20745692193395
+				},
+				"startPos": {
+					"x": 807.477024094941,
+					"y": 103.83971186366398
+				},
+				"anchorAngle": 0.27527242304563926,
+				"text": "0.3",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": false
+			},
+			"e0": {
+				"x": 474.5,
+				"y": 332,
+				"startNode": {
+					"x": 782,
+					"y": 88,
+					"id": 1,
+					"text": "Cloudy",
+					"emissionProabilities": {},
+					"colour": "#FF0000"
+				},
+				"endNode": {
+					"x": 167,
+					"y": 576,
+					"id": "e0",
+					"text": "Dry",
+					"emission": "D"
+				},
+				"type": "direct",
+				"endPos": {
+					"x": 197,
+					"y": 552.1951219512196
+				},
+				"startPos": {
+					"x": 758.4995609278687,
+					"y": 106.64750287349607
+				},
+				"anchorAngle": 2.4788342205550764,
+				"text": "0.25",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": true
+			},
+			"e1": {
+				"x": 657,
+				"y": 329.5,
+				"startNode": {
+					"x": 782,
+					"y": 88,
+					"id": 1,
+					"text": "Cloudy",
+					"emissionProabilities": {},
+					"colour": "#FF0000"
+				},
+				"endNode": {
+					"x": 532,
+					"y": 571,
+					"id": "e1",
+					"text": "Dryish",
+					"emission": "I"
+				},
+				"type": "direct",
+				"endPos": {
+					"x": 547.527950310559,
+					"y": 541
+				},
+				"startPos": {
+					"x": 768.2098098748581,
+					"y": 114.64264732177415
+				},
+				"anchorAngle": 1.932525568314829,
+				"text": "0.25",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": true
+			},
+			"e2": {
+				"x": 896,
+				"y": 329,
+				"startNode": {
+					"x": 782,
+					"y": 88,
+					"id": 1,
+					"text": "Cloudy",
+					"emissionProabilities": {},
+					"colour": "#FF0000"
+				},
+				"endNode": {
+					"x": 1010,
+					"y": 570,
+					"id": "e2",
+					"text": "Moist",
+					"emission": "M"
+				},
+				"type": "direct",
+				"endPos": {
+					"x": 995.8091286307053,
+					"y": 540
+				},
+				"startPos": {
+					"x": 794.828077103174,
+					"y": 115.11900510407828
+				},
+				"anchorAngle": 1.000846508490152,
+				"text": "0.25",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": true
+			},
+			"e3": {
+				"x": 1103,
+				"y": 331,
+				"startNode": {
+					"x": 782,
+					"y": 88,
+					"id": 1,
+					"text": "Cloudy",
+					"emissionProabilities": {},
+					"colour": "#FF0000"
+				},
+				"endNode": {
+					"x": 1424,
+					"y": 574,
+					"id": "e3",
+					"text": "Soggy",
+					"emission": "S"
+				},
+				"type": "direct",
+				"endPos": {
+					"x": 1394,
+					"y": 551.2897196261682
+				},
+				"startPos": {
+					"x": 805.9192840362377,
+					"y": 106.10712156014262
+				},
+				"anchorAngle": 0.5558881347718144,
+				"text": "0.25",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": true
+			}
+		},
+		"2": {
+			"0": {
+				"x": 787.5,
+				"y": 294.5,
+				"startNode": {
+					"x": 1252,
+					"y": 292,
+					"id": 2,
+					"text": "Rainy",
+					"emissionProabilities": {},
+					"colour": "#FFA500"
+				},
+				"endNode": {
+					"x": 323,
+					"y": 297,
+					"id": 0,
+					"text": "Sunny",
+					"emissionProabilities": {},
+					"colour": "#0000FF"
+				},
+				"type": "arc",
+				"endPos": {
+					"x": 352.8821136005231,
+					"y": 294.34350314935
+				},
+				"startPos": {
+					"x": 1222.0910231583543,
+					"y": 289.66530665011487
+				},
+				"anchorAngle": -3.1402956374558766,
+				"text": "0.25",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": false
+			},
+			"1": {
+				"x": 1017,
+				"y": 190,
+				"startNode": {
+					"x": 1252,
+					"y": 292,
+					"id": 2,
+					"text": "Rainy",
+					"emissionProabilities": {},
+					"colour": "#FFA500"
+				},
+				"endNode": {
+					"x": 782,
+					"y": 88,
+					"id": 1,
+					"text": "Cloudy",
+					"emissionProabilities": {},
+					"colour": "#FF0000"
+				},
+				"type": "arc",
+				"endPos": {
+					"x": 810.9698377806064,
+					"y": 95.79254307806036
+				},
+				"startPos": {
+					"x": 1226.5229759050594,
+					"y": 276.1602881363358
+				},
+				"anchorAngle": -2.866320230544154,
+				"text": "0.25",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": false
+			},
+			"2": {
+				"x": 1252,
+				"y": 292,
+				"startNode": {
+					"x": 1252,
+					"y": 292,
+					"id": 2,
+					"text": "Rainy",
+					"emissionProabilities": {},
+					"colour": "#FFA500"
+				},
+				"endNode": {
+					"x": 1252,
+					"y": 292,
+					"id": 2,
+					"text": "Rainy",
+					"emissionProabilities": {},
+					"colour": "#FFA500"
+				},
+				"type": "self",
+				"endPos": {
+					"x": 1278.7971176265637,
+					"y": 305.22516817658067
+				},
+				"startPos": {
+					"x": 0,
+					"y": 0
+				},
+				"anchorAngle": 0,
+				"text": "0.5",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": false
+			},
+			"e0": {
+				"x": 709.5,
+				"y": 434,
+				"startNode": {
+					"x": 1252,
+					"y": 292,
+					"id": 2,
+					"text": "Rainy",
+					"emissionProabilities": {},
+					"colour": "#FFA500"
+				},
+				"endNode": {
+					"x": 167,
+					"y": 576,
+					"id": "e0",
+					"text": "Dry",
+					"emission": "D"
+				},
+				"type": "direct",
+				"endPos": {
+					"x": 197,
+					"y": 568.147465437788
+				},
+				"startPos": {
+					"x": 1222.9777409490225,
+					"y": 299.5966097423757
+				},
+				"anchorAngle": 2.9038875690873382,
+				"text": "0.05",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": true
+			},
+			"e1": {
+				"x": 892,
+				"y": 431.5,
+				"startNode": {
+					"x": 1252,
+					"y": 292,
+					"id": 2,
+					"text": "Rainy",
+					"emissionProabilities": {},
+					"colour": "#FFA500"
+				},
+				"endNode": {
+					"x": 532,
+					"y": 571,
+					"id": "e1",
+					"text": "Dryish",
+					"emission": "I"
+				},
+				"type": "direct",
+				"endPos": {
+					"x": 562,
+					"y": 559.375
+				},
+				"startPos": {
+					"x": 1224.0267560444918,
+					"y": 302.8396320327594
+				},
+				"anchorAngle": 2.747504768654556,
+				"text": "0.1",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": true
+			},
+			"e2": {
+				"x": 1131,
+				"y": 431,
+				"startNode": {
+					"x": 1252,
+					"y": 292,
+					"id": 2,
+					"text": "Rainy",
+					"emissionProabilities": {},
+					"colour": "#FFA500"
+				},
+				"endNode": {
+					"x": 1010,
+					"y": 570,
+					"id": "e2",
+					"text": "Moist",
+					"emission": "M"
+				},
+				"type": "direct",
+				"endPos": {
+					"x": 1036.1151079136691,
+					"y": 540
+				},
+				"startPos": {
+					"x": 1232.3025504773777,
+					"y": 314.627648625161
+				},
+				"anchorAngle": 2.0025822118983427,
+				"text": "0.35",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": true
+			},
+			"e3": {
+				"x": 1338,
+				"y": 433,
+				"startNode": {
+					"x": 1252,
+					"y": 292,
+					"id": 2,
+					"text": "Rainy",
+					"emissionProabilities": {},
+					"colour": "#FFA500"
+				},
+				"endNode": {
+					"x": 1424,
+					"y": 574,
+					"id": "e3",
+					"text": "Soggy",
+					"emission": "S"
+				},
+				"type": "direct",
+				"endPos": {
+					"x": 1405.7021276595744,
+					"y": 544
+				},
+				"startPos": {
+					"x": 1267.621452194645,
+					"y": 317.61191580749914
+				},
+				"anchorAngle": 0.608325008618573,
+				"text": "0.5",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5,
+				"isEmission": true
+			}
+		},
+		"e0": [],
+		"e1": [],
+		"e2": [],
+		"e3": []
+	},
+	"initialProbabilityDistribution": {
+		"0": "0.33",
+		"1": "0.34",
+		"2": "0.33",
+		"3": 0
+	},
+	"emissionStates": {
+		"e0": {
+			"x": 167,
+			"y": 576,
+			"id": "e0",
+			"text": "Dry",
+			"emission": "D"
+		},
+		"e1": {
+			"x": 532,
+			"y": 571,
+			"id": "e1",
+			"text": "Dryish",
+			"emission": "I"
+		},
+		"e2": {
+			"x": 1010,
+			"y": 570,
+			"id": "e2",
+			"text": "Moist",
+			"emission": "M"
+		},
+		"e3": {
+			"x": 1424,
+			"y": 574,
+			"id": "e3",
+			"text": "Soggy",
+			"emission": "S"
+		}
+	}
+}
