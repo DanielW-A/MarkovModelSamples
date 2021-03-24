@@ -1,0 +1,154 @@
+{
+	"type": "MarkovChain",
+	"states": {
+		"0": {
+			"x": 640,
+			"y": 326.3333333333333,
+			"id": 0,
+			"text": "H",
+			"emission": "H"
+		},
+		"1": {
+			"x": 1280,
+			"y": 326.3333333333333,
+			"id": 1,
+			"text": "F",
+			"emission": "F"
+		}
+	},
+	"transitions": {
+		"0": {
+			"0": {
+				"x": 640,
+				"y": 326.3333333333333,
+				"startNode": {
+					"x": 640,
+					"y": 326.3333333333333,
+					"id": 0,
+					"text": "H",
+					"emission": "H"
+				},
+				"endNode": {
+					"x": 640,
+					"y": 326.3333333333333,
+					"id": 0,
+					"text": "H",
+					"emission": "H"
+				},
+				"type": "self",
+				"endPos": {
+					"x": 613.2028823734363,
+					"y": 313.10816515675265
+				},
+				"startPos": {
+					"x": 0,
+					"y": 0
+				},
+				"anchorAngle": 3.141592653589793,
+				"text": "0.7",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5
+			},
+			"1": {
+				"x": 960,
+				"y": 326.3333333333333,
+				"startNode": {
+					"x": 640,
+					"y": 326.3333333333333,
+					"id": 0,
+					"text": "H",
+					"emission": "H"
+				},
+				"endNode": {
+					"x": 1280,
+					"y": 326.3333333333333,
+					"id": 1,
+					"text": "F",
+					"emission": "F"
+				},
+				"type": "arc",
+				"endPos": {
+					"x": 1250.212337292807,
+					"y": 329.89492438278876
+				},
+				"startPos": {
+					"x": 669.787662707192,
+					"y": 329.8949243827915
+				},
+				"anchorAngle": 0,
+				"text": "0.3",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5
+			}
+		},
+		"1": {
+			"0": {
+				"x": 960,
+				"y": 326.3333333333333,
+				"startNode": {
+					"x": 1280,
+					"y": 326.3333333333333,
+					"id": 1,
+					"text": "F",
+					"emission": "F"
+				},
+				"endNode": {
+					"x": 640,
+					"y": 326.3333333333333,
+					"id": 0,
+					"text": "H",
+					"emission": "H"
+				},
+				"type": "arc",
+				"endPos": {
+					"x": 669.7876627071926,
+					"y": 322.77174228387594
+				},
+				"startPos": {
+					"x": 1250.2123372928072,
+					"y": 322.7717422838764
+				},
+				"anchorAngle": 3.141592653589793,
+				"text": "0.4",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5
+			},
+			"1": {
+				"x": 1280,
+				"y": 326.3333333333333,
+				"startNode": {
+					"x": 1280,
+					"y": 326.3333333333333,
+					"id": 1,
+					"text": "F",
+					"emission": "F"
+				},
+				"endNode": {
+					"x": 1280,
+					"y": 326.3333333333333,
+					"id": 1,
+					"text": "F",
+					"emission": "F"
+				},
+				"type": "self",
+				"endPos": {
+					"x": 1306.7971176265637,
+					"y": 339.558501509914
+				},
+				"startPos": {
+					"x": 0,
+					"y": 0
+				},
+				"anchorAngle": 0,
+				"text": "0.6",
+				"perpendicularPart": 20,
+				"parallelPart": 0.5
+			}
+		}
+	},
+	"initialProbabilityDistribution": {
+		"0": "0.6",
+		"1": "0.4"
+	},
+	"emissionStates": null
+}
